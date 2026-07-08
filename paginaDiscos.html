@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda_De_Discos_Peronistas</title>
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            background-color:  rgb(42, 112, 42);
+        }
+        #btnCarrito{
+            background-color: #dd1212;
+            border-radius: 8px;
+            font-family: Arial, sans-serif;
+            font-size: 30px;
+        }
+        #carritoEntero{
+            position: fixed;
+            top: 15px;
+            right: 15px;
+            z-index: 1000;
+            font-family: Arial, sans-serif;
+        }
+        #carrito{
+            border: 2px solid rgb(0, 0, 0);
+            background-color: #b11818;
+            margin-top: 8px;
+        }
+        .oculto{
+            display: none;
+        }
+        #Indice{
+            background-color: #2a5f70;
+            border: 1px solid #000000;
+            border-radius: 8px;
+            padding: 15px;
+            width: 100px;
+            margin-left: 8px;
+        }
+        #seccion {
+            display: grid;
+            grid-template-columns: repeat(6, minmax(15px, 1fr));
+            gap: 2px; 
+            padding: 10px;
+        }      
+        #tarjeta {
+            border: 1px solid #000000;
+            border-radius: 8px;
+            padding: 15px;
+            background-color: #702a2a;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+    </style>
+</head>
+<body>
+    
+    <div id = "carritoEntero">
+        <button onclick="alternarContenido()" id = "btnCarrito"> Mi Carrito</button>
+        <div id = "carrito" class="oculto">
+            <h3>Tu carrito esta vacio</h3>
+        </div>
+    </div>
+    <h1>Indice</h1>
+    <ul id = "Indice">
+        <li><a href="#seccion_discos">Discos</a></li>
+        <li><a href="#seccion_Libros">Libros</a></li>
+        <li><a href="#seccion_stickers">Stickers</a></li>
+    </ul>
+    <h1>Discos</h1>
+    <div id = "seccion_discos">
+    <div id = "seccion">
+       <div id="tarjeta">
+    <a href="https://youtube.com/playlist?list=OLAK5uy_kW2eh134mPpJrfPRs3FNduOdddJd5Cci0&si=P0YMSMKHWJsAEvOY">
+        <img src="Albums/EnElPalacioDeBellasArtes.jpg" width="250" height="250">
+    </a>
+    <h2>En el Palacio de Bellas Artes</h2>
+    <p>Juan Gabriel</p>
+    <button onclick="agregarCarritoDisco('En el Palacio de Bellas Artes',14600,'opVinillo1')">Agregar al carrito</button>
+    <p>Agregar vinilo ($10000 extra)</p>
+    <input type="checkbox" id="opVinillo1">
+</div>
+
+<div id="tarjeta">
+    <a href="https://youtube.com/playlist?list=OLAK5uy_lpjzs39Y39SSt9fpej45WPho13SzCK-VY&si=rBRQ5IAC5YNtWn_1">
+        <img src="Albums/Mas.jpg" width="250" height="250">
+    </a>
+    <h2>Más</h2>
+    <p>Alejandro Sanz</p>
+    <button onclick="agregarCarritoDisco('Mas',46900,'opVinillo2')">Agregar al carrito</button>
+    <p>Agregar vinilo ($10000 extra)</p>
+    <input type="checkbox" id="opVinillo2">
+</div>
+
+<div id="tarjeta">
+    <a href="https://youtube.com/playlist?list=OLAK5uy_mQ06SbO_qgeLn944wsvuRjWIsUkFx3uGU&si=n2uJJF1BMUdTd-re">
+        <img src="Albums/DooWopsAndHooligans.jpg" width="250" height="250">
+    </a>
+    <h2>Doo-Wops & Hooligans</h2>
+    <p>Bruno Mars</p>
+    <button onclick="agregarCarritoDisco('Doo-Wops & Hooligans',67299,'opVinillo3')">Agregar al carrito</button>
+    <p>Agregar vinilo ($10000 extra)</p>
+    <input type="checkbox" id="opVinillo3">
+</div>
+
+<div id="tarjeta">
+    <a href="https://youtube.com/playlist?list=OLAK5uy_kBZttoEQHjc1LQ-IadM5xHZiQcikeH__M&si=0Q-iXNOR23WNwTmP">
+        <img src="Albums/111.jpg" width="250" height="250">
+    </a>
+    <h2>111</h2>
+    <p>Milo J</p>
+    <button onclick="agregarCarritoDisco('111',17304,'opVinillo4')">Agregar al carrito</button>
+    <p>Agregar vinilo ($10000 extra)</p>
+    <input type="checkbox" id="opVinillo4">
+</div>
+
+<div id="tarjeta">
+    <a href="https://youtube.com/playlist?list=OLAK5uy_nvmHwRQr3hA9gjEl-gB9g-Acz5mcveRg8&si=V4o0v_lYvFxRaQZq">
+        <img src="Albums/HopesAndFears.jpg" width="250" height="250">
+    </a>
+    <h2>Hopes and Fears</h2>
+    <p>Keane</p>
+    <button onclick="agregarCarritoDisco('Hopes and Fears',200000,'opVinillo5')">Agregar al carrito</button>
+    <p>Agregar vinilo ($10000 extra)</p>
+    <input type="checkbox" id="opVinillo5">
+</div>
+
+    </div>
+    </div>
+    <h1>Libros</h1>
+    <div id = "seccion_Libros">
+        <div id = "seccion">
+
+       <div id="tarjeta">
+   <img src="Libros/AvatarFuego.webp"
+     width="200"
+     height="300"
+     onclick="agregarCarritoLibro('Avatar: Fuego',59999,'Dura1','Blanda1')">
+    <br><br>
+    <input type="radio" id="Dura1" name="tipoTapa1"> Tapa dura
+    <input type="radio" id="Blanda1" name="tipoTapa1"> Tapa blanda
+</div>
+
+<div id="tarjeta">
+    <img src="Libros/ThePromise.webp"
+     width="200"
+     height="300"
+     onclick="agregarCarritoLibro('Avatar: ThePromise',49899,'Dura2','Blanda2')">
+    <br><br>
+    <input type="radio" id="Dura2" name="tipoTapa2"> Tapa dura
+    <input type="radio" id="Blanda2" name="tipoTapa2"> Tapa blanda
+</div>
+
+<div id="tarjeta">
+    <img src="Libros/TheSearch.jpg"
+     width="200"
+     height="300"
+     onclick="agregarCarritoLibro('Avatar: TheSearch',84673,'Dura3','Blanda3')">
+    <br><br>
+    <input type="radio" id="Dura3" name="tipoTapa3"> Tapa dura
+    <input type="radio" id="Blanda3" name="tipoTapa3"> Tapa blanda
+</div>
+
+<div id="tarjeta">
+    <img src="Libros/TheRift.jpg"
+     width="200"
+     height="300"
+     onclick="agregarCarritoLibro('Avatar: TheSearch',93999,'Dura4','Blanda4')">
+    <br><br>
+    <input type="radio" id="Dura4" name="tipoTapa4"> Tapa dura
+    <input type="radio" id="Blanda4" name="tipoTapa4"> Tapa blanda
+</div>
+
+<div id="tarjeta">
+     <img src="Libros/SmokeAndShadow.webp"
+     width="200"
+     height="300"
+     onclick="agregarCarritoLibro('Avatar: TheSearch',78429,'Dura5','Blanda5')">
+    <br><br>
+    <input type="radio" id="Dura5" name="tipoTapa5"> Tapa dura
+    <input type="radio" id="Blanda5" name="tipoTapa5"> Tapa blanda
+</div>
+
+    </div>
+    </div>
+    <h1>Stickers</h1>
+    <h3>$2000 cd/u</h3>
+    <div id = "seccion_stickers">
+    <div id = "seccion">
+       <div id="tarjeta">
+    <img src="Stickers/PatricioInocentePalomita.jpg"
+     width="200"
+     height="200"
+     onclick="agregarCarritoSticker('PatricioInocentePalomita')">
+</div>
+
+<div id="tarjeta">
+    <img src="Stickers/Flinn.jpg"
+     width="200"
+     height="200"
+     onclick="agregarCarritoSticker('Flinn')">
+</div>
+<div id="tarjeta">
+     <img src="Stickers/Perrito.jpg"
+     width="200"
+     height="200"
+     onclick="agregarCarritoSticker('Perrito')">
+</div>
+
+<div id="tarjeta">
+     <img src="Stickers/BichoAzul.jpg"
+     width="200"
+     height="200"
+     onclick="agregarCarritoSticker('BichoAzul')">
+</div>
+
+<div id="tarjeta">
+     <img src="Stickers/Perro.jpg"
+     width="200"
+     height="200"
+     onclick="agregarCarritoSticker('Perro')">
+</div>
+
+    </div>
+</div>
+<script>
+    let carritoNombre = new Array();
+    let carritoPrecio = new Array();
+
+        function alternarContenido() {
+            const contenido = document.getElementById("carrito");
+            contenido.classList.toggle("oculto");
+        }
+
+    function agregarCarritoDisco(nombre, precio, checkbox){
+        
+        let nombre1 = nombre;
+        let precio1 = Number(precio);
+        let checkbox1 = document.getElementById(checkbox);
+
+        if (checkbox1.checked){
+            precio1 = precio1 + 10000;
+            nombre1 = nombre + " (Con vinilo)"
+        }
+
+        carritoNombre.push(nombre1);
+        carritoPrecio.push(precio1);
+        cargarCarrito()
+    }
+
+    function agregarCarritoSticker(nombre){
+        carritoNombre.push(nombre);
+        carritoPrecio.push(2000);
+        cargarCarrito()
+    }
+
+    function agregarCarritoLibro(nombre, precio, dura, blanda){
+        let nombre1 = nombre;
+        let dura1 = document.getElementById(dura);
+        let blanda1 = document.getElementById(blanda);
+
+        if(dura1.checked){
+            nombre1 = nombre1 + " (Tapa dura)";
+            carritoPrecio.push(precio);
+            carritoNombre.push(nombre1);
+        }else if (blanda1.checked){
+            nombre1 = nombre1 + " (Tapa blanda)"
+            carritoPrecio.push(precio);
+            carritoNombre.push(nombre1);
+        }else{
+            alert("No se a seleccionado tipo de tapa")
+        }      
+        cargarCarrito()
+    }
+
+    function cargarCarrito(){
+    let divCarrito = document.getElementById("carrito");
+    
+    if (carritoNombre.length === 0) {
+        divCarrito.innerHTML = "<h3>Tu Carrito está vacío</h3>";
+        return;
+    }
+
+    let contenidoHTML = "<h3>Productos en tu carrito:</h3><ul>";
+    let total = 0;
+
+    for (let i = 0; i < carritoNombre.length; i++) {
+        contenidoHTML += `<li>${carritoNombre[i]} - $${carritoPrecio[i]}</li>`;
+        total += carritoPrecio[i];
+    }
+
+    contenidoHTML += "</ul>";
+
+    // --- CÁLCULO DE DESCUENTOS ---
+    let totalConDescuentoMayor = total;
+    
+    if (total > 10000) {
+        totalConDescuentoMayor = total * 0.95; 
+    }
+
+    let totalEfectivo = totalConDescuentoMayor * 0.90; 
+
+    if (total > 10000) {
+        contenidoHTML += `<p>Subtotal: $${total}</p>`;
+        contenidoHTML += `<p style="color: green;"><strong>Total con 5% OFF (Más de $10,000): $${totalConDescuentoMayor.toFixed(2)}</strong></p>`;
+    } else {
+        contenidoHTML += `<p><strong>Total: $${total}</strong></p>`;
+    }
+
+    contenidoHTML += `<p style="color: blue;"><strong>Total en Efectivo (10% OFF adicional): $${totalEfectivo.toFixed(2)}</strong></p>`;
+    contenidoHTML += `<button onclick="vaciarCarrito()">Vaciar Carrito</button>`;
+
+    divCarrito.innerHTML = contenidoHTML;
+}
+
+
+
+    function vaciarCarrito() {
+        carritoNombre = [];
+        carritoPrecio = [];
+        cargarCarrito();
+    }
+</script>
+</body>
+</html>
