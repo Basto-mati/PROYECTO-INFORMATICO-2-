@@ -1,0 +1,33 @@
+.acerca {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.acerca-bloque {
+    background-color: #16202d;
+    padding: 24px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.acerca h1,
+.acerca h2 { color: #ffffff; margin-top: 1px; }
+
+.acerca p { line-height: 1.7; }
+
+.acerca-lista {
+    line-height: 1.9;
+    padding-left: 22px;
+}
+
+.pie {
+    background-color: #171a21;
+    color: #8f98a0;
+    text-align: center;
+    padding: 25px 20px;
+    margin-top: 60px;
+    font-size: 14px;
+}
+
+.pie p { margin: 0; }

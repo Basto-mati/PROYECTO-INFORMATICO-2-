@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego - Papu Bestie</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/detalle.css">
+</head>
+<body>
+
+<header>
+    <nav class="barra-navegadora">
+        <div class="logo-PapuBestie">Papu Bestie</div>
+        <div class="contenedor-menu">
+            <a class="item-menu" href="index.html">Store</a>
+        </div>
+    </nav>
+</header>
+
+<main class="detalle">
+  <section class="detalle-medios" aria-label="Fotos del juego">
+    <div class="carrusel">
+      <img id="juegoImagen" class="imagen-principal" alt="">
+      <button class="carrusel-flecha carrusel-anterior" id="fotoAnterior" type="button" aria-label="Foto anterior">&#10094;</button>
+      <button class="carrusel-flecha carrusel-siguiente" id="fotoSiguiente" type="button" aria-label="Foto siguiente">&#10095;</button>
+    </div>
+    <div id="juegoGaleria" class="galeria-detalle" aria-label="Elegir una foto"></div>
+  </section>
+
+  <section class="detalle-informacion">
+    <h1 id="juegoNombre"></h1>
+    <p id="juegoCategoria" class="juego-categoria"></p>
+    <p id="juegoDescripcion"></p>
+  </section>
+</main>
+
+<script src="js/juegos.js"></script>
+<script src="js/detalle.js"></script>
+</body>
+</html>

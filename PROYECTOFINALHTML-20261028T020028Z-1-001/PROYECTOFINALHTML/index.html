@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Papu Bestie</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/cartelera.css">
+</head>
+<body>
+
+<header>
+    <nav class="barra-navegadora">
+        <div class="logo-PapuBestie">Papu Bestie</div>
+        <div class="contenedor-menu">
+        <a class="item-menu" href="index.html">Store</a>
+        <a class="item-menu" href="wishlist.html">Wishlist</a>
+        <a class="item-menu" href="mejorValorados.html">Mejores Juegos</a>
+        <a class="item-menu" href="acerca.html">Acerca de</a>
+
+            
+        </div>
+     <div class="contenedor-sesion">
+        <a class="item-menu" href="login.html">Iniciar Sesion</a>
+        
+        <a class="item-menu" href="registrarse.html">Registrarse</a>
+        </div>    
+
+    </nav>
+</header>
+
+<main>
+    <section class="contenedor-carrusel-banner">
+        <button class="btn-slider btn-prev" id="btnPrev" aria-label="Anterior">&#10094;</button>
+
+        <div class="slider-track">
+            <article class="slide activa">
+                <div class="slide-imagen">
+                    <img src="IMAGENES/residentevilrequiem.jpg" alt="Portada de Resident Evil: Requiem">
+                </div>
+                <div class="slide-info">
+                    <h3>Resident Evil: Requiem</h3>
+                    <p>Juego n°1 mejor valorado</p>
+                    <a href="juego.html?id=1" class="btn-ver-mas">Ver más</a>
+                </div>
+            </article>
+
+            <article class="slide">
+                <div class="slide-imagen">
+                    <img src="IMAGENES/007.jpg" alt="Portada de 007 First Light">
+                </div>
+                <div class="slide-info">
+                    <h3>007 First Light</h3>
+                    <p>Nuevo lanzamiento disponible</p>
+                    <a href="juego.html?id=2" class="btn-ver-mas">Ver más</a>
+                </div>
+            </article>
+
+            <article class="slide">
+                <div class="slide-imagen">
+                    <img src="IMAGENES/starwars.jpg" alt="Portada de Star Wars Zero Company">
+                </div>
+                <div class="slide-info">
+                    <h3>Star Wars Zero Company</h3>
+                    <p>Próximamente en tiendas</p>
+                    <a href="juego.html?id=3" class="btn-ver-mas">Ver más</a>
+                </div>
+            </article>
+
+            <article class="slide">
+                <div class="slide-imagen">
+                    <img src="IMAGENES/gtav.webp" alt="Portada de Grand Theft Auto V">
+                </div>
+                <div class="slide-info">
+                    <h3>Grand Theft Auto V</h3>
+                    <p>Oferta destacada</p>
+                    <a href="juego.html?id=4" class="btn-ver-mas">Ver más</a>
+                </div>
+            </article>
+
+            <article class="slide">
+                <div class="slide-imagen">
+                    <img src="IMAGENES/eafc26.jpg" alt="Portada de EA SPORTS FC 27">
+                </div>
+                <div class="slide-info">
+                    <h3>EA SPORTS FC 26</h3>
+                    <p>Disponible ya</p>
+                    <a href="juego.html?id=5" class="btn-ver-mas">Ver más</a>
+                </div>
+            </article>
+        </div>
+
+        <button class="btn-slider btn-next" id="btnNext" aria-label="Siguiente">&#10095;</button>
+    </section>
+
+
+<section class="contenedor-cartelera">
+    <h2 class="titulo-cartelera">Survival Horror games</h2>
+
+    <div class="grilla-peliculas">
+
+    
+        <article class="tarjeta-pelicula">
+            <a href="juego.html?id=1">
+                <div class="poster-contenedor">
+                    <img src="SECCION TERROR/residentevilrequiem.webp" alt="Portada de RESIDENT EVIL REQUIEM">
+                </div>
+            </a> 
+               
+            <div class="info-pelicula">
+                <h3 class="titulo-pelicula" id="Resident Evil Requiem">Resident Evil Requiem</h3>
+            </div>
+        </article>
+
+       <article class="tarjeta-pelicula">
+            <a href="juego.html?id=2">
+            <div class="poster-contenedor">
+                    <img src="SECCION TERROR/alan_wake_2__2012_-5830942.webp" alt="Portada de Alan Wake 2">
+                </div>
+                <div class="info-pelicula">
+                    <h3 class="titulo-pelicula">Alan Wake 2</h3>
+                </div>
+            </a>    
+        </article>    
+            
+            <article class="tarjeta-pelicula">
+                <a href="juego.html?id=3">
+                <div class="poster-contenedor">
+                    <img src="SECCION TERROR/Alien_isolation_arte.webp" alt="Portada de Alien isolation">
+                </div>
+                <div class="info-pelicula">
+                    <h3 class="titulo-pelicula"> Alien isolation</h3>
+                    
+                </div>
+                </a>
+            </article>   
+    
+           <article class="tarjeta-pelicula">
+                <a href="juego.html?id=4">
+                <div class="poster-contenedor">
+                    <img src="SECCION TERROR/amnesia.webp" alt="Portada de Amnesia Bunker">
+                </div>
+                <div class="info-pelicula">
+                    <h3 class="titulo-pelicula"> Amnesia Bunker</h3>
+                </div>
+              </a>  
+            </article>
+        
+           <article class="tarjeta-pelicula">
+                <a href="juego.html?id=5">
+                <div class="poster-contenedor">
+                    <img src="SECCION TERROR/resident_evil_4_remake-5789986.webp" alt="Portada de Resident Evil 4">
+                </div>
+                <div class="info-pelicula">
+                    <h3 class="titulo-pelicula">Resident Evil 4</h3>
+                </div>
+                </a>
+            </article>
+        
+           <article class="tarjeta-pelicula">
+                <a href="juego.html?id=6">
+                <div class="poster-contenedor">
+                    <img src="SECCION TERROR/resident_evil_7-5898772.jpg" alt="Portada de Resident Evil 7 Biohazzar">
+                </div>
+                <div class="info-pelicula">
+                    <h3 class="titulo-pelicula">Resident Evil 7 Biohazzar</h3>
+                </div>
+                </a>
+            </article>
+            
+           <article class="tarjeta-pelicula">
+                <a href="juego.html?id=7">
+                <div class="poster-contenedor">
+                    <img src="SECCION TERROR/until_dawn__2024_-5893373.jpg" alt="Portada de Until Dawn">
+                </div>
+                <div class="info-pelicula">
+                    <h3 class="titulo-pelicula">Until Dawn</h3>
+                </div>
+                </a>
+            </article>
+            
+           <article class="tarjeta-pelicula">
+            <a href="juego.html?id=8">
+                <div class="poster-contenedor">
+                    <img src="SECCION TERROR/silentHill2.jfif" alt = "Portada de Silent Hill 2">
+                </div>
+                <div class="info-pelicula">
+                    <h3 class="titulo-pelicula">Silent Hill 2</h3>
+                </div>
+                </a>
+            </article> 
+         
+           <article class="tarjeta-pelicula">
+            <a href="juego.html?id=9">
+                <div class="poster-contenedor">
+                    <img src="SECCION TERROR/thelastofus.webp" alt="Portada de The Last of Us part 2">
+                </div>
+                <div class="info-pelicula">
+                    <h3 class="titulo-pelicula">The Last of Us part 2</h3>
+                </div>
+                </a>
+            </article>
+            
+           <article class="tarjeta-pelicula">
+            <a href="juego.html?id=10">
+                <div class="poster-contenedor">
+                    <img src="SECCION TERROR/outlast.jfif" alt="Portada de Outlast">
+                </div>
+                <div class="info-pelicula">
+                    <h3 class="titulo-pelicula">Outlast</h3>
+                </div>
+                </a>
+            </article>    
+
+    </div>
+</section>
+
+<section class="contenedor-cartelera">
+    <h2 class="titulo-cartelera">Simulators</h2>
+
+    <div class="grilla-peliculas">
+
+        <article class="tarjeta-pelicula">
+            <div class="poster-contenedor">
+                <img src="Seccion simulador/WorldBox.jpg" alt="Portada de World Box">
+            </div>
+            <div class="info-pelicula">
+                <h3 class="titulo-pelicula">WorldBox</h3>
+            </div>
+
+        </article>
+
+       <article class="tarjeta-pelicula">
+                <div class="poster-contenedor">
+                    <img src="Seccion simulador/Schedule.jpg" alt="Portada de Schedule">
+                </div>
+                <div class="info-pelicula">
+                    <h3 class="titulo-pelicula">Schedule</h3>
+                </div>
+            </article>    
+        
+            <article class="tarjeta-pelicula">
+                <div class="poster-contenedor">
+                    <img src="Seccion simulador/thief.jpg" alt="Portada Thief Simulator">
+                </div>
+                <div class="info-pelicula">
+                    <h3 class="titulo-pelicula"> Thief Simulator</h3>
+                </div>
+            </article>   
+    
+           <article class="tarjeta-pelicula">
+                <div class="poster-contenedor">
+                    <img src="Seccion simulador/GOAT.jpg" alt="Portada GOAT ">
+                </div>
+                <div class="info-pelicula">
+                    <h3 class="titulo-pelicula"> GOAT Simulator</h3>
+                </div>
+            </article>
+        
+           <article class="tarjeta-pelicula">
+                <div class="poster-contenedor">
+                    <img src="Seccion simulador/Crime Scene Cleaner.avif" alt="Portda de Crime Scene Cleaner">
+                </div>
+                <div class="info-pelicula">
+                    <h3 class="titulo-pelicula">Crime Scene Cleaner</h3>
+                </div>
+            </article>
+        
+           <article class="tarjeta-pelicula">
+                <div class="poster-contenedor">
+                    <img src="Seccion simulador/waterpark simulator.jpg" alt="Portada waterpark simulator">
+                </div>
+                <div class="info-pelicula">
+                    <h3 class="titulo-pelicula">Waterpark Simulator</h3>
+                </div>
+            </article>
+            
+           <article class="tarjeta-pelicula">
+                <div class="poster-contenedor">
+                    <img src="Seccion simulador/Supermarket.jpg" alt="Portada Supermarket Simulator">
+                </div>
+                <div class="info-pelicula">
+                    <h3 class="titulo-pelicula">Supermarket Simulator</h3>
+                </div>
+            </article>
+            
+           <article class="tarjeta-pelicula">
+                <div class="poster-contenedor">
+                    <img src="Seccion simulador/tcg card shop.jpg" alt = "Portada Tcg card shop">
+                </div>
+                <div class="info-pelicula">
+                    <h3 class="titulo-pelicula">Tcg card shop</h3>
+                </div>
+            </article> 
+         
+           <article class="tarjeta-pelicula">
+                <div class="poster-contenedor">
+                    <img src="Seccion simulador/Retro Rewind.webp" alt="Portada Retro Rewind">
+                </div>
+                <div class="info-pelicula">
+                    <h3 class="titulo-pelicula">Retro Rewind</h3>
+                </div>
+            </article>
+            
+           <article class="tarjeta-pelicula">
+                <div class="poster-contenedor">
+                    <img src="Seccion simulador/Woman Simulator.jpg" alt="Portada Woman Simulator">
+                </div>
+                <div class="info-pelicula">
+                    <h3 class="titulo-pelicula">Woman Simulator</h3>
+                </div>
+            </article>    
+
+    </div>
+</section>
+
+<section class="contenedor-cartelera">
+    <h2 class="titulo-cartelera">RPG</h2>
+
+    <div class="grilla-peliculas">
+
+        <article class="tarjeta-pelicula">
+            <div class="poster-contenedor">
+                <img src="seccion RPG/alpha protocol.jpg" alt="Portada de Alpha Protocol">
+            </div>
+            <div class="info-pelicula">
+                <h3 class="titulo-pelicula">Alpha Protocol</h3>
+            </div>
+        </article>
+
+        <article class="tarjeta-pelicula">
+            <div class="poster-contenedor">
+                <img src="seccion RPG/baldurs gate 3.jpg" alt="Portada de Baldur's Gate 3">
+            </div>
+            <div class="info-pelicula">
+                <h3 class="titulo-pelicula">Baldur's Gate 3</h3>
+            </div>
+        </article>
+
+        <article class="tarjeta-pelicula">
+            <div class="poster-contenedor">
+                <img src="seccion RPG/disco elysium.jpg" alt="Portada de Disco Elysium">
+            </div>
+            <div class="info-pelicula">
+                <h3 class="titulo-pelicula">Disco Elysium</h3>
+            </div>
+        </article>
+
+        <article class="tarjeta-pelicula">
+            <div class="poster-contenedor">
+                <img src="seccion RPG/dragonquest 3.jpg" alt="Portada de Dragon Quest 3">
+            </div>
+            <div class="info-pelicula">
+                <h3 class="titulo-pelicula">Dragon Quest 3</h3>
+            </div>
+        </article>
+
+        <article class="tarjeta-pelicula">
+            <div class="poster-contenedor">
+                <img src="seccion RPG/expedition 33.jpg" alt="Portada de Expedition 33">
+            </div>
+            <div class="info-pelicula">
+                <h3 class="titulo-pelicula">Expedition 33</h3>
+            </div>
+        </article>
+
+        <article class="tarjeta-pelicula">
+            <div class="poster-contenedor">
+                <img src="seccion RPG/final fantasy 6.jpg" alt="Portada de Final Fantasy 6">
+            </div>
+            <div class="info-pelicula">
+                <h3 class="titulo-pelicula">Final Fantasy 6</h3>
+            </div>
+        </article>
+
+        <article class="tarjeta-pelicula">
+            <div class="poster-contenedor">
+                <img src="seccion RPG/palword.jpg" alt="Portada de Palworld">
+            </div>
+            <div class="info-pelicula">
+                <h3 class="titulo-pelicula">Palworld</h3>
+            </div>
+        </article>
+
+        <article class="tarjeta-pelicula">
+            <div class="poster-contenedor">
+                <img src="seccion RPG/persona 5.jpg" alt="Portada de Persona 5">
+            </div>
+            <div class="info-pelicula">
+                <h3 class="titulo-pelicula">Persona 5</h3>
+            </div>
+        </article>
+
+        <article class="tarjeta-pelicula">
+            <div class="poster-contenedor">
+                <img src="seccion RPG/the backworld.jpg" alt="Portada de The Backworld">
+            </div>
+            <div class="info-pelicula">
+                <h3 class="titulo-pelicula">The Backworld</h3>
+            </div>
+        </article>
+
+        <article class="tarjeta-pelicula">
+            <div class="poster-contenedor">
+                <img src="seccion RPG/the witcher.jpg" alt="Portada de The Witcher">
+            </div>
+            <div class="info-pelicula">
+                <h3 class="titulo-pelicula">The Witcher</h3>
+            </div>
+        </article>
+
+    </div>
+</section>
+
+<section class="contenedor-cartelera">
+    <h2 class="titulo-cartelera">Acción - Aventura</h2>
+
+    <div class="grilla-peliculas">
+
+        <article class="tarjeta-pelicula">
+            <div class="poster-contenedor">
+                <img src="Seccion Acción-Aventura/007.jpg" alt="Portada de 007 First Light">
+            </div>
+            <div class="info-pelicula">
+                <h3 class="titulo-pelicula">007 First Light</h3>
+            </div>
+        </article>
+
+        <article class="tarjeta-pelicula">
+            <div class="poster-contenedor">
+                <img src="Seccion Acción-Aventura/grand_theft_auto_vi-5959272.webp" alt="Portada de Grand Theft Auto VI">
+            </div>
+            <div class="info-pelicula">
+                <h3 class="titulo-pelicula">Grand Theft Auto VI</h3>
+            </div>
+        </article>
+
+        <article class="tarjeta-pelicula">
+            <div class="poster-contenedor">
+                <img src="Seccion Acción-Aventura/gtav.webp" alt="Portada de Grand Theft Auto V">
+            </div>
+            <div class="info-pelicula">
+                <h3 class="titulo-pelicula">Grand Theft Auto V</h3>
+            </div>
+        </article>
+
+        <article class="tarjeta-pelicula">
+            <div class="poster-contenedor">
+                <img src="Seccion Acción-Aventura/it_take_two-5764802.webp" alt="Portada de It Takes Two">
+            </div>
+            <div class="info-pelicula">
+                <h3 class="titulo-pelicula">It Takes Two</h3>
+            </div>
+        </article>
+
+        <article class="tarjeta-pelicula">
+            <div class="poster-contenedor">
+                <img src="Seccion Acción-Aventura/pragmata.webp" alt="Portada de Pragmata">
+            </div>
+            <div class="info-pelicula">
+                <h3 class="titulo-pelicula">Pragmata</h3>
+            </div>
+        </article>
+
+        <article class="tarjeta-pelicula">
+            <div class="poster-contenedor">
+                <img src="Seccion Acción-Aventura/red_dead_3.webp" alt="Portada de Red Dead Redemption 2">
+            </div>
+            <div class="info-pelicula">
+                <h3 class="titulo-pelicula">Red Dead Redemption 2</h3>
+            </div>
+        </article>
+
+        <article class="tarjeta-pelicula">
+            <div class="poster-contenedor">
+                <img src="Seccion Acción-Aventura/spiderman.webp" alt="Portada de Spider-Man">
+            </div>
+            <div class="info-pelicula">
+                <h3 class="titulo-pelicula">Spider-Man</h3>
+            </div>
+        </article>
+
+        <article class="tarjeta-pelicula">
+            <div class="poster-contenedor">
+                <img src="Seccion Acción-Aventura/starwars.jpg" alt="Portada de Star Wars Zero Company">
+            </div>
+            <div class="info-pelicula">
+                <h3 class="titulo-pelicula">Star Wars Zero Company</h3>
+            </div>
+        </article>
+
+        <article class="tarjeta-pelicula">
+            <div class="poster-contenedor">
+                <img src="Seccion Acción-Aventura/tomraider.jfif" alt="Portada de Tomb Raider">
+            </div>
+            <div class="info-pelicula">
+                <h3 class="titulo-pelicula">Tomb Raider</h3>
+            </div>
+        </article>
+
+        <article class="tarjeta-pelicula">
+            <div class="poster-contenedor">
+                <img src="Seccion Acción-Aventura/Uncharted.avif" alt="Portada de Uncharted 4">
+            </div>
+            <div class="info-pelicula">
+                <h3 class="titulo-pelicula">Uncharted 4</h3>
+            </div>
+        </article>
+
+    </div>
+</section>
+
+<section class="contenedor-cartelera">
+    <h2 class="titulo-cartelera">Story-Games</h2>
+
+    <div class="grilla-peliculas">
+
+        <article class="tarjeta-pelicula">
+            <div class="poster-contenedor">
+                <img src="StoryGames/beyond.webp" alt="Portada de Beyond: Two Souls">
+            </div>
+            <div class="info-pelicula">
+                <h3 class="titulo-pelicula">Beyond: Two Souls</h3>
+            </div>
+        </article>
+
+        <article class="tarjeta-pelicula">
+            <div class="poster-contenedor">
+                <img src="StoryGames/Bloodborne.avif" alt="Portada de Bloodborne">
+            </div>
+            <div class="info-pelicula">
+                <h3 class="titulo-pelicula">Bloodborne</h3>
+            </div>
+        </article>
+
+        <article class="tarjeta-pelicula">
+            <div class="poster-contenedor">
+                <img src="StoryGames/cyberpunk.png" alt="Portada de Cyberpunk 2077">
+            </div>
+            <div class="info-pelicula">
+                <h3 class="titulo-pelicula">Cyberpunk 2077</h3>
+            </div>
+        </article>
+
+        <article class="tarjeta-pelicula">
+            <div class="poster-contenedor">
+                <img src="StoryGames/detroit.jfif" alt="Portada de Detroit: Become Human">
+            </div>
+            <div class="info-pelicula">
+                <h3 class="titulo-pelicula">Detroit: Become Human</h3>
+            </div>
+        </article>
+
+        <article class="tarjeta-pelicula">
+            <div class="poster-contenedor">
+                <img src="StoryGames/dispatch.jfif" alt="Portada de Dispatch">
+            </div>
+            <div class="info-pelicula">
+                <h3 class="titulo-pelicula">Dispatch</h3>
+            </div>
+        </article>
+
+        <article class="tarjeta-pelicula">
+            <div class="poster-contenedor">
+                <img src="StoryGames/life.jfif" alt="Portada de Life is Strange">
+            </div>
+            <div class="info-pelicula">
+                <h3 class="titulo-pelicula">Life is Strange</h3>
+            </div>
+        </article>
+
+        <article class="tarjeta-pelicula">
+            <div class="poster-contenedor">
+                <img src="StoryGames/nier.png" alt="Portada de NieR: Automata">
+            </div>
+            <div class="info-pelicula">
+                <h3 class="titulo-pelicula">NieR: Automata</h3>
+            </div>
+        </article>
+
+        <article class="tarjeta-pelicula">
+            <div class="poster-contenedor">
+                <img src="StoryGames/Tsushima.jpg" alt="Portada de Ghost of Tsushima">
+            </div>
+            <div class="info-pelicula">
+                <h3 class="titulo-pelicula">Ghost of Tsushima</h3>
+            </div>
+        </article>
+
+        <article class="tarjeta-pelicula">
+            <div class="poster-contenedor">
+                <img src="StoryGames/TWD.webp" alt="Portada de The Walking Dead">
+            </div>
+            <div class="info-pelicula">
+                <h3 class="titulo-pelicula">The Walking Dead</h3>
+            </div>
+        </article>
+
+        <article class="tarjeta-pelicula">
+            <div class="poster-contenedor">
+                <img src="StoryGames/zelda.jfif" alt="Portada de The Legend of Zelda">
+            </div>
+            <div class="info-pelicula">
+                <h3 class="titulo-pelicula">The Legend of Zelda</h3>
+            </div>
+        </article>
+
+    </div>
+</section>
+
+
+<section class="contenedor-cartelera">
+    <h2 class="titulo-cartelera">Géneros de la tienda</h2>
+    <ul>
+        <li>Survival Horror</li>
+        <li>RPG</li>
+        <li>Simuladores</li>
+    </ul>
+</section>
+
+</main>
+<footer class="pie">
+    <p> Papu Bestie · Trabajo práctico xd</p>
+</footer>
+
+<script src="js/juegos.js"></script>
+<script src="js/script.js"></script>
+
+</body>
+
+</html>

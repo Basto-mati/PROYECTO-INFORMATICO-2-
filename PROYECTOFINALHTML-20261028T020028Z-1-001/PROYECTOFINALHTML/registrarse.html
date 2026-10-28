@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear cuenta - Papu Bestie</title>
+    <link rel="stylesheet" href="style/iniciarSesion.css">
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+
+<header>
+    <nav class="barra-navegadora">
+        <div class="logo-PapuBestie">Papu Bestie</div>
+        <div class="contenedor-menu">
+            <a class="item-menu" href="index.html">Store</a>
+            <a class="item-menu" href="wishlist.html">Wishlist</a>
+            <a class="item-menu" href="acerca.html">Acerca de</a>
+        </div>
+    </nav>
+</header>
+
+    <section class="formulario">
+    <h1>Crear cuenta</h1>
+
+    <form id="formregistrarse" novalidate>
+        <label for="nombre">Nombre de usuario</label>
+        <input type="text" id="nombre" autocomplete="username">
+        <small class="error" id="errorNombre" aria-live="polite"></small>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="tuemail@ejemplo.com" autocomplete="email">
+        <small class="error" id="errorEmail" aria-live="polite"></small>
+
+        <label for="contrasena">Contraseña</label>
+        <input type="password" id="contrasena" autocomplete="new-password">
+        <small class="error" id="errorContrasena" aria-live="polite"></small>
+
+        <button type="submit" class="btn-ver-mas">Crear cuenta</button>
+    </form>
+
+</section>
+
+
+
+     <script src="js/registrarse.js"></script>
+</body>
+</html>

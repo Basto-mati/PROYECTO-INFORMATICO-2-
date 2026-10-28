@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar sesión - Papu Bestie</title>
+    <link rel="stylesheet" href="style/iniciarSesion.css">
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+
+<header>
+    <nav class="barra-navegadora">
+        <div class="logo-PapuBestie">Papu Bestie</div>
+        <div class="contenedor-menu">
+            <a class="item-menu" href="index.html">Store</a>
+            <a class="item-menu" href="wishlist.html">Wishlist</a>
+            <a class="item-menu" href="acerca.html">Acerca de</a>
+        </div>
+
+    </nav>
+</header>
+
+    <section class="formulario">
+        <h1>Iniciar sesión</h1>
+
+        <form id="formLogin" novalidate>
+            <label for="usuario">Usuario</label>
+            <input type="text" id="usuario" autocomplete="username">
+            <small class="error" id="errorUsuario"></small>
+            <label for="contrasena">Contraseña</label>
+            <input type="password" id="contrasena" autocomplete="current-password">
+            <small class="error" id="errorContrasena"></small>
+
+            <small class="error" id="errorGeneral" aria-live="polite"></small>
+
+            <button type="submit" class="btn-ver-mas">Entrar</button>
+        </form>
+
+    </section>
+
+
+
+    <script src="js/login.js"></script>
+</body>
+</html>
